@@ -1,0 +1,24 @@
+p {
+  color: deeppink;
+}
+h1 {
+  background-color: forestgreen;
+}
+img {
+  width: 150px;
+}
+.a {
+  color: mediumblue;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2;
+  text-transform: uppercase;
+}
+ul,
+ol {
+  list-style-type: circle;
+}
+a {
+  text-decoration: none;
+}
