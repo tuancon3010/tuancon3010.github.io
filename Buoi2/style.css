@@ -1,0 +1,15 @@
+/* tag.class chọn các thẻ có class */
+p.a.b.c.d.e.f.g.h.i.k.l.m.n {
+  color: red !important;
+}
+/* chọn id */
+#i {
+  color: blue;
+}
+/* !important sẽ ghi đè bộ chọn */
+div {
+  width: 90%;
+}
+p {
+  width: inherit;
+}
