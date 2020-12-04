@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu đa cấp</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 800px;
+            margin: auto;
+        }
+        .menu{
+            list-style-type: none;
+            padding: 0%;
+        }
+        .menu-item{
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .menu-item:hover .dropdown{
+            opacity: 1;
+            /* display: block */
+        }
+        .menu-link{
+            color: inherit;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .dropdown{
+            /* display: none; */
+            opacity: 0;
+            width: 800px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            padding: 10px;
+            background-color: #190032;
+            transition: opacity 1s;
+        }
+        .sub-menu{
+            display: inline-block;
+            list-style-type: none;
+            width: calc(25% - 4px);
+            padding: 0;
+        }
+        .sub-link{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">#ZINGCHART</a>
+                    <div class="dropdown">
+                        <ul class="sub-menu">
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">REALTIME</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">Bài hát</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="#" class="sub-link">MV</a>
+                            </li>
+                        </ul>
+                    </div>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Mới phát hành</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Top 100</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Chủ đề</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
