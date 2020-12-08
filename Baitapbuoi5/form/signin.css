@@ -1,0 +1,345 @@
+/* *{
+    box-sizing: border-box;
+} */
+.signin-container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  margin-left: 100px;
+  margin-right: 100px;
+  top: 100px;
+  /* left: 470px; */
+  left: 900px;
+  background-color: #e5e6e9;
+}
+.signin {
+  position: absolute;
+  width: 396px;
+  height: 311px;
+  margin-left: 27px;
+  margin-top: 54.5px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.inputcontainer {
+  position: relative;
+  width: 396px;
+  height: 128px;
+}
+.email {
+  position: relative;
+  width: 364px;
+  height: 52px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  left: 16px;
+}
+.email input {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+  width: 330px;
+  height: 22px;
+  border: 1px solid #dddfe2;
+  text-align: center;
+  background-color: #e8f0fe;
+  border-radius: 6px;
+}
+.password {
+  position: relative;
+  width: 364px;
+  height: 52px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  left: 16px;
+}
+.password input {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 16px;
+  padding-left: 16px;
+  width: 330px;
+  height: 22px;
+  border: 1px solid #dddfe2;
+  background-color: #e8f0fe;
+  border-radius: 6px;
+  text-align: center;
+}
+.signin-button {
+  position: relative;
+  width: 396px;
+  height: 48px;
+  padding-top: 6px;
+  text-align: center;
+}
+.signin-button button {
+  position: relative;
+  width: 364px;
+  height: 48px;
+  padding: 16px;
+  background-color: #1877f2;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.signin-button button:hover {
+  background-color: #365899;
+}
+.forgotpassword {
+  width: 396px;
+  height: 18.667px;
+  margin-top: 16px;
+  text-align: center;
+}
+.forgotpassword a {
+  color: #1877f2;
+  text-decoration: none;
+}
+.forgotpassword a:hover {
+  text-decoration: underline;
+}
+.line {
+  width: 364px;
+  margin: 20px 16px;
+  border-top: 1px solid #dadde1;
+}
+.signup-button {
+  width: 396px;
+  height: 48px;
+  padding-top: 6px;
+  text-align: center;
+}
+.signup-button button {
+  width: 146.181px;
+  height: 48px;
+  padding: 0px 16px;
+  font-size: 17px;
+  background-color: #42b72a;
+  border: none;
+  border-radius: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.signup-button button:hover {
+  background-color: #36a420;
+}
+/* --------------------------------------------------------------------------------------------------------- */
+
+.signup-container {
+  position: relative;
+  width: 500px;
+  height: 570px;
+  background-color: #e5e6e9;
+  top: -400px;
+  left: 70px;
+}
+.signup {
+  position: absolute;
+  left: 14px;
+  top: 11px;
+  width: 432px;
+  height: 502px;
+  margin: 20px 20px;
+  background-color: white;
+}
+.title {
+  position: relative;
+  width: 400px;
+  padding: 10px 16px;
+  height: 61px;
+}
+.h1 {
+  width: 400px;
+  height: 37px;
+  margin: 0px;
+  padding: 0px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.p {
+  width: 400px;
+  height: 24px;
+  margin: 0px;
+  padding: 0px;
+  color: #606770;
+  font-size: 15px;
+  font-weight: 400;
+}
+.line1 {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  height: 50px;
+}
+.firstname {
+  position: relative;
+  width: 194px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: none;
+}
+.firstname input {
+  width: 170px;
+  height: 16px;
+  padding: 11px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+}
+.name {
+  position: relative;
+  left: 206px;
+  top: -50px;
+  width: 194px;
+  height: 40px;
+  margin-bottom: 10px;
+  border: none;
+}
+.name input {
+  width: 170px;
+  height: 16px;
+  padding: 11px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+}
+.phone {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.phone input {
+  position: relative;
+  width: 375px;
+  height: 16px;
+  padding: 11px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+}
+.newpassword {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.newpassword input {
+  position: relative;
+  width: 375px;
+  height: 16px;
+  padding: 11px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+}
+.birthday-title {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  height: 19.5px;
+  margin-top: 2px;
+  margin-bottom: 3px;
+}
+.birthday {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  height: 36px;
+}
+.day select {
+  position: absolute;
+  width: 125px;
+  height: 34px;
+  padding: 0px 8px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+}
+.month select {
+  position: absolute;
+  left: 138px;
+  width: 125px;
+  height: 34px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+}
+.year select {
+  position: absolute;
+  right: 0px;
+  width: 125px;
+  height: 34px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+}
+.sexual-title {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  height: 19.5px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.sexual {
+  position: relative;
+  left: 16px;
+  width: 400px;
+  margin-bottom: 15px;
+}
+.woman {
+  position: absolute;
+  width: 125px;
+  height: 34px;
+  padding: 0px 8px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+}
+.man {
+  position: absolute;
+  right: 0px;
+  width: 125px;
+  height: 34px;
+  padding: 0px 8px;
+  border: 1px solid #ccd0d5;
+  border-radius: 5px;
+}
+.note {
+  position: relative;
+  top: 40px;
+  left: 16px;
+  width: 400px;
+  height: 42px;
+  margin: 11px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.signupform-button {
+  position: relative;
+  left: 16px;
+  top: 30px;
+  width: 400px;
+  height: 56px;
+  text-align: center;
+}
+.signupform-button button {
+  position: relative;
+  width: 194px;
+  height: 36px;
+  padding: 7px 32px;
+  margin: 10px 0px;
+  background-color: #00a400;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+.signupform-button button:hover {
+  background-color: #69a74e;
+}
