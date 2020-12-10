@@ -1,0 +1,20 @@
+.container1{
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    /* align-content: center; */
+}
+.item{
+    width: 50px;
+    background-color: gray;
+    margin: 0px 3px;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* flex-grow: 100px; */
+}
+span{
+    height: 300px;
+}
