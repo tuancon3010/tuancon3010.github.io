@@ -238,11 +238,12 @@ img {
 .dropdown {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .dropdown-content {
   opacity: 0;
   position: absolute;
-  top: 15%;
+  top: 100%;
   background-color: white;
 }
 .dropdown-button:hover {
