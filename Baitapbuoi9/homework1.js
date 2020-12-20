@@ -59,7 +59,7 @@
 // if (max < b) { // Nếu a < b thì số lớn nhất sẽ gán cho b
 //     max = b;
 // } else if (max < c) { //Nếu b < c thì số lớn nhất sẽ gán cho c
-//     max = c
+//     max = c;
 // }
 // alert("Số lớn nhất là" + " " + max); // Trả về giá trị sau khi so sánh
 
