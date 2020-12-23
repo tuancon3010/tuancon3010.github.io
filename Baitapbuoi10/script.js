@@ -1,6 +1,7 @@
 // // Câu 1. VCT tính và in bảng cửu chương.
 // function bct() {
-//     for (i = 1; i <= 9; i++){
+//     for (let i = 1; i <= 9; i++){
+//         console.log("Bảng cửu chương " + i);
 //         for (j = 1; j <= 10; j++){
 //             console.log(`${i} x ${j} = ${i * j}`);
 //         }
@@ -29,7 +30,7 @@
 // // Câu 3.
 // function cau3() {
 //     let sum = 0;
-//     for (i = 0; i <= 1000; i++) {
+//     for (let i = 0; i <= 1000; i++) {
 //         if (i % 3 === 0 && i % 5 === 0) {
 //             sum += i; // Tổng của i thoả mãn 2 đk trên
 //         }
@@ -119,10 +120,6 @@
 
 // Đổi nhiệt độ
 
-
-
-
-
 // // fibonaci
 // function fibonacci() {
 //   let a = +prompt("Nhập số lần in dãy fibonacci");
@@ -138,10 +135,6 @@
 //   }
 // }
 // fibonacci();
-
-
-
-
 
 
 // // UCLN, BCNN
@@ -160,3 +153,44 @@
 //   console.log(`"Bội chung nhỏ nhất: " ${d}`);
 // }
 // ucln()
+
+// // Số perfect
+// function perfect(n) {
+//   sum = 0;
+//   for (i = 1; i < n; i++) {
+//       if (n % i == 0)
+//           sum += i;
+//   }
+//   if (sum == n) {
+//     console.log(n + " la so perfect");
+//   } else {
+//     console.log(n + " khong phai so perfect");
+//   }
+// }
+
+function patternOne(n) {
+    for (let i = 1; i <= n; i++) {
+        let str = "";
+
+        for (let j = 1; j <= i; j++) {
+            str += "* ";
+        }
+
+        console.log(str);
+    }
+}
+
+function patternTwo(n) {
+    for (let i = 1; i <= n; i++) {
+        let str = "";
+        for (let j = 1; j <= n; j++) {
+            if (j < (n + 1 - i)) {
+                str += " ";
+            } else {
+                str += "*";
+            }
+        }
+
+        console.log(str);
+    }
+}
