@@ -28,7 +28,7 @@ nghia.attack();
 
 ///////////////////////////////////////////////
 
-let Calculator = {
+let cal = {
   a: 0,
   b: 0,
   get(a, b) {
@@ -61,7 +61,6 @@ let Calculator = {
     return this;
   },
 };
-let cal = Calculator;
 cal.get(5, 3).add().sub().mul().div().rem().exp();
 
 //////////////////////////////////////////////////////
