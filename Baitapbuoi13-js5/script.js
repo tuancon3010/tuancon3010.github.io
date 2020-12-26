@@ -19,7 +19,7 @@ function paramaterize(string) {
   for (let i = 1; i < string.length; i++) {
     if (string[i] == " ") {
       result += "-";
-    } else if (string[i - 1] == " " || string[i - 1] == "-") {
+    } else if (string[i - 1] == " " || string[i - 1] == "-") {// chỗ nào có khoảng trắng thì thay bằng "-"
       result += string[i].toLowerCase();
     } else {
       result += string[i];
@@ -69,7 +69,7 @@ function insert(str1, str2, index) {
   }
   return result;
 }
-insert("ghikm", "l", 4);
+insert("ghikm", "l", 4); // chèn "l" vào vị trí index thứ 4 trong chuỗi ghikm => ghiklm
 
 /// 7. Rút gọn chuỗi
 function shorten(string, a) {
@@ -79,7 +79,7 @@ function shorten(string, a) {
   }
   return result + "...";
 }
-shorten("chuoinaydai500m", 3);
+shorten("chuoinaydai500m", 3); // cắt chuỗi đến vị trí index thứ 3, phần còn lại chuyển thành "..."
 
 // 8. Đếm số lần xuất hiện chuỗi con
 function countStr(str1, str2) {
@@ -155,4 +155,4 @@ function printContentArray(array) {
     console.log(element);
   });
 }
-printContentArray([arr]);
+printContentArray([arr]); // gọi function với tham số là mảng đã khai báo
