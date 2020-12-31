@@ -156,3 +156,29 @@ function printContentArray(array) {
   });
 }
 printContentArray([arr]); // gọi function với tham số là mảng đã khai báo
+
+let arr = [1, 3, 5, 4]
+for (let i = 0; i < arr.length; i++){
+}
+arr.forEach((i) => console.log(i));
+
+///filter
+let arr = []
+
+
+
+// reduce
+let arr = [
+  { name: "Ba", age: 29 },
+  { name: "Bon", age: 3 },
+];
+
+arr._reduce = function (callback, initial) {
+  let accu = initial;
+  for (let i = 0; i < this.length; i++){
+    accu = callback(accu, this[i]);
+  }
+  return accu;
+}
+arr._reduce((sum, i) => (sum += i.age), 0);
+

@@ -120,21 +120,21 @@
 
 // Đổi nhiệt độ
 
-// // fibonaci
-// function fibonacci() {
-//   let a = +prompt("Nhập số lần in dãy fibonacci");
-//   let b = 0;
-//   let c = 1;
-//   console.log(b);
-//   console.log(c);
-//   let d = 0;
-//   for (let i = 2; i < a; i++) {
-//     console.log((d = c + b));
-//     b = c; // b lần lặp sau = c lần lặp trước
-//     c = d; // c lần lặp sau = d lần lặp trước
-//   }
-// }
-// fibonacci();
+// fibonaci
+function fibonacci() {
+  let a = +prompt("Nhập số lần in dãy fibonacci");
+  let b = 0;
+  let c = 1;
+  console.log(b);
+  console.log(c);
+  let d = 0;
+  for (let i = 2; i < a; i++) {
+    console.log((d = c + b));
+    b = c; // b lần lặp sau = c lần lặp trước
+    c = d; // c lần lặp sau = d lần lặp trước
+  }
+}
+fibonacci();
 
 
 // // UCLN, BCNN
