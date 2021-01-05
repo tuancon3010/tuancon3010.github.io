@@ -9,6 +9,7 @@
 // 5. Thêm background cho các ô ngẫu nhiên trong bảng (mỗi hàng 1 ô, style bằng .style.backgroundColor), và thay đổi nội dung trong các ô đó thành "😍 Mr. Ba đẹp trai"
 
 //
+/*
 let p1 = document.getElementById("p1").innerHTML;
 let p2 = document.getElementById("p2").innerHTML;
 let arr1 = p1.split(/(?:,| )+/);
@@ -26,12 +27,16 @@ function countword(array1, array2) {
   return `Có tổng cộng ${count} từ có độ dài > 8`;
 }
 countword(arr1, arr2);
-
+*/
+let p1 = document.getElementById("p1");
+let p2 = document.getElementById("p2");
+p1.innerHTML = p1.textContent.split(" ").map(i => i.length > 8 ? `<span class="color">${i}</span>` : i).join(" ");
+p2.innerHTML = p2.textContent.split(" ").map(i => i.length < 8 ? "Anh Ba đẹp trai 🤣" : i).join(" ");
 /////////////
 document.getElementById("image").src = "img.png";
 document.getElementById("image").alt = "Girl xinh";
-document.getElementById("link").href =
-  "https://www.vectorico.com/wp-content/uploads/2018/02/Facebook-Sad-300x300.png";
+document.getElementById("link").href = "https://www.facebook.com/";
+document.getElementById("link").innerText = "Facebook";
 
 /////////////
 // let randomrow1 = Math.floor(Math.random() * 4) + 1
@@ -42,9 +47,5 @@ document.getElementById("link").href =
 let table = document.getElementById("table");
 for (let i = 0; i < table.rows.length; i++) {
   table.rows[i].cells[Math.floor(Math.random() * 4)].style.backgroundColor =
-    "red";
+    "red"
 }
-
-setInterval(function () {
-  window.location.reload();
-}, 2000);

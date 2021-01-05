@@ -1,0 +1,10 @@
+.demo {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    line-height: 2;
+}
+
+.demo:hover{
+    color: yellow;
+    font-size: 20px;
+}
