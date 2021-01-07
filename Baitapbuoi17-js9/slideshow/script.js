@@ -21,6 +21,6 @@ function showSlide(n) {
 }
 
 
-document.querySelector(".dropdown").onclick = function () {
+function dropDownShow() {
   document.querySelector(".dropdown-content").classList.toggle("show")
 }

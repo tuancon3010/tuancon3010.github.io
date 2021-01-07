@@ -61,7 +61,8 @@ body {
   background-color: rgb(65, 65, 65);
   border-radius: 5px;
   z-index: 9999;
-  display: none;
+  visibility: hidden;
+  transition: 0.4s;
 }
 .dropdown-content a {
   display: block;
@@ -75,9 +76,8 @@ body {
   color: steelblue;
   transition: ease 0.4s;
 }
-.show{
-  display: block;
-  transition: ease 0.4s;
+.show {
+  visibility: visible;
 }
 .container {
   width: 100%;
