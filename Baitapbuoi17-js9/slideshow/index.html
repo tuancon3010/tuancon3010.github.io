@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./themify-icons.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="navbar-menu">
+          <li class="dropdown">
+            <a href="#" class="dropdown-button">Home</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-button">Store</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-button">Find Car
+              <i class="ti-angle-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <ul>
+                <li>
+                  <a href="#">Ford Mustang</a>
+                </li>
+                <li>
+                  <a href="#">Ford Mustang</a>
+                </li>
+                <li>
+                  <a href="#">Ford Mustang</a>
+                </li>
+                <li>
+                  <a href="#">Ford Mustang</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-button">Picture</a>
+          </li>
+        </ul>
+        <div class="logo">
+          <img src="./640px-Ford_Motor_Company_Logo.svg.png" alt="" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Ảnh -->
+        <div class="imgSlide fade">
+          <div class="number">1/4</div>
+          <img src="./1.jpg" alt="" ; />
+          <div class="text">Picture 1</div>
+        </div>
+
+        <div class="imgSlide fade">
+          <div class="number">2/4</div>
+          <img src="./2.jpg" alt="" ; />
+          <div class="text">Picture 2</div>
+        </div>
+
+        <div class="imgSlide fade">
+          <div class="number">3/4</div>
+          <img src="./3.jpg" alt="" ; />
+          <div class="text">Picture 3</div>
+        </div>
+
+        <div class="imgSlide fade">
+          <div class="number">4/4</div>
+          <img src="./4.jpg" alt="" ; />
+          <div class="text">Picture 4</div>
+        </div>
+
+        <!-- Nút tiến lùi -->
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

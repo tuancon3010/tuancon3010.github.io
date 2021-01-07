@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    width: 100%;
+}
+
+.thumbs img{
+    max-width: 300px;
+    max-height: 300px;
+}
