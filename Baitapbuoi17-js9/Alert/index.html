@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alert</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.lineex.es/wp-content/uploads/2018/06/alert-icon-red-11.png"
+      type="image/x-icon"
+    />
+    <style>
+      .button {
+        border: 4px solid rgb(104, 80, 80);
+        width: 200px;
+        border-radius: 15px;
+        cursor: pointer;
+        text-align: center;
+        padding: 20px;
+        color: tomato;
+        font-weight: 700;
+        font-size: 18px;
+        background-color: rgb(181, 255, 172);
+      }
+      .alert {
+        width: 200px;
+        position: fixed;
+        top: 0px;
+        right: 50px;
+      }
+      .alert div {
+        position: relative;
+        top: 5px;
+        right: 50px;
+        font-size: 18px;
+        border: 4px solid rgb(104, 80, 80);
+        width: 200px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 5px;
+        padding: 20px;
+        background-color: rgb(181, 255, 172);
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button" onclick="showAlert()">Click here</div>
+    <div class="alert"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
