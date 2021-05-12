@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý học viên</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./themify-icons.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Quản lý học viên</h1>
+      <div class="add">
+        <a href="" class="btn btn-success">
+          <i class="ti-plus"></i>
+          Thêm học viên
+        </a>
+      </div>
+      <div class="table-container">
+        <table class="table table-hover">
+          <thead class="table-info">
+            <tr>
+              <th>Họ tên</th>
+              <th>Ngày sinh</th>
+              <th>Email</th>
+              <th>Điện thoại</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Võ Văn Tuấn</td>
+              <td>30/10/1998</td>
+              <td>tuancon3010@gmail.com</td>
+              <td>19001001</td>
+              <td>
+                <a href="" class="text-info" id="edit">
+                  <i class="ti-pencil-alt"></i>
+                  Chỉnh sửa
+                </a>
+                |
+                <a href="" class="text-danger" id="remove">
+                  <i class="ti-trash"></i>
+                  Xóa
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Võ Văn Tuấn</td>
+              <td>30/10/1998</td>
+              <td>tuancon3010@gmail.com</td>
+              <td>19001001</td>
+              <td>
+                <a href="" class="text-info" id="edit">
+                  <i class="ti-pencil-alt"></i>
+                  Chỉnh sửa
+                </a>
+                |
+                <a href="" class="text-danger" id="remove">
+                  <i class="ti-trash"></i>
+                  Xóa
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Võ Văn Tuấn</td>
+              <td>30/10/1998</td>
+              <td>tuancon3010@gmail.com</td>
+              <td>19001001</td>
+              <td>
+                <a href="" class="text-info" id="edit">
+                  <i class="ti-pencil-alt"></i>
+                  Chỉnh sửa
+                </a>
+                |
+                <a href="" class="text-danger" id="remove">
+                  <i class="ti-trash"></i>
+                  Xóa
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Võ Văn Tuấn</td>
+              <td>30/10/1998</td>
+              <td>tuancon3010@gmail.com</td>
+              <td>19001001</td>
+              <td>
+                <a href="" class="text-info" id="edit">
+                  <i class="ti-pencil-alt"></i>
+                  Chỉnh sửa
+                </a>
+                |
+                <a href="" class="text-danger" id="remove">
+                  <i class="ti-trash"></i>
+                  Xóa
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="edit-container" id="editform">
+        <i class="ti-close close-btn"></i>
+        <h1 class="text-center">Chỉnh sửa thông tin học viên</h1>
+        <div class="form">
+            <div class="form-row row">
+                <label for="name" class="col-2">Họ tên</label>
+                <div class="col-10">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-row row">
+                <label for="name" class="col-2">Ngày sinh</label>
+                <div class="col-10">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-row row">
+                <label for="name" class="col-2">Email</label>
+                <div class="col-10">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="form-row row">
+                <label for="name" class="col-2">Điện thoại</label>
+                <div class="col-10">
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
+}
+.add{
+margin-bottom: 15px;
+}
+table{
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+tr{
+    font-size: 16px;
+    font-weight: 500;
+}
+.edit-container{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 20px;
+    border: 3px solid gray;
+    display: none;
+}
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+    color: rgb(124, 121, 121);
+}
+.close-btn:hover{
+    color: black;
+    cursor: pointer;
+}
+.form-row{
+    margin: 5px 0px;
+}

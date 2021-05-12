@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Quản lý sinh viên</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Quản lý sinh viên</h2>
+      <!-- ADD Button -->
+      <!-- <div id="add-btn" class="mb-2">
+        <a href="" class="btn btn-success">
+          <i class="bi bi-plus-square-fill"></i> Thêm sinh viên
+        </a>
+      </div> -->
+      <!-- Button trigger modal -->
+      <div id="add-btn" class="mb-3">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Thêm sinh viên
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thêm sinh viên</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form class="m-auto mb-2">
+                  <div class="mb-2">
+                    <label class="form-label"
+                      >Họ & Tên</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <label  class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label"
+                      >D.O.B</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label"
+                      >Điện thoại</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Lưu</button>
+                  <button type="submit" class="btn btn-danger">Huỷ Bỏ</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form add students -->
+      <!-- <form class="m-auto col-5 mb-2">
+        <div class="mb-2">
+          <label for="exampleInputEmail1" class="form-label">Họ & Tên</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-2">
+          <label for="exampleInputPassword1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-2">
+            <label for="exampleInputPassword1" class="form-label">D.O.B</label>
+            <input type="date" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-2">
+            <label for="exampleInputPassword1" class="form-label">Điện thoại</label>
+            <input type="email" class="form-control" id="exampleInputPassword1">
+          </div>
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <button type="submit" class="btn btn-danger">Huỷ Bỏ</button>
+      </form> -->
+
+      <!-- List students -->
+      <table class="table table-hover">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Họ & Tên</th>
+            <th scope="col">Email</th>
+            <th scope="col">D.O.B</th>
+            <th scope="col">Điện Thoại</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Cung Bùi Tuấn Anh</th>
+            <td>cungbuituananh@gmail.com</td>
+            <td>28/06/1994</td>
+            <td>0979952xxx</td>
+            <td>
+              <a href="#" class="text-primary mx-2"
+                >Sửa <i class="bi bi-pencil-square"></i
+              ></a>
+
+              <a href="#" class="text-danger"
+                ><i class="bi bi-x-circle-fill"></i> Xoá</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Nguyễn Ba</th>
+            <td>banx@gmail.com</td>
+            <td>01/10/1992</td>
+            <td>0976996xxx</td>
+            <td>
+              <a href="#" class="text-primary mx-2"
+                >Sửa <i class="bi bi-pencil-square"></i
+              ></a>
+
+              <a href="#" class="text-danger"
+                ><i class="bi bi-x-circle-fill"></i> Xoá</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Phạm Thanh Hà</th>
+            <td>hapt.devpro@gmail.com</td>
+            <td>08/08/1986</td>
+            <td>0912345xxx</td>
+            <td>
+              <a href="#" class="text-primary mx-2"
+                >Sửa <i class="bi bi-pencil-square"></i
+              ></a>
+
+              <a href="#" class="text-danger"
+                ><i class="bi bi-x-circle-fill"></i> Xoá</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

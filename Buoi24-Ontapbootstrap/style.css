@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+}
+.header{
+    background-color: #7952B3;
+}
+.nav-item a{
+    color: #ffffff;
+}
+.btn-download{
+    font-weight: 600;
+    color: #ffe484;
+    border-color: #ffe484;
+}
+.btn-download:hover{
+    background-color: #ffe484;
+    border-color: #ffe484;
+}
